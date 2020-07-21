@@ -48,11 +48,12 @@ nav a:hover{
 /* Simple grid */
 .g-row{
 	width: 100%;
-	overflow: hidden;
+	overflow: auto;
 }
 
 .g-row img{
 	width: 100%; /*This makes all images in grids to be the size of their cell */
+	border-radius: 5px;
 }
 
 .g-50{
@@ -61,8 +62,9 @@ nav a:hover{
 }
 
 .g-30{
-	width: 30%;
+	width: 40%;
 	float: left;
+	margin: 40px;
 }
 
 .g-70{
