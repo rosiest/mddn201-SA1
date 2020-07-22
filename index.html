@@ -10,144 +10,163 @@
 
 <body>
 
-<p>Notice how this content isn't centered. To center it we need to wrap it</p>
+	<header>
+		<section>
+			<h1 style="text-align:center">Networks of Wellington</h1>
+			<p style="text-align:center">Cindy Cruz</p>
+		</section>
+	</header>
 
-	<section>
-		<h1>Here is some centered content, by wrapping it with a section tag</h1>
-		<p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci. </em></p>
-
-		<p>Notice how if you change the width of your browser it stays in the center</p>
-	</section>
-
-	<section>
-		<p>This is a simple nav bar, which is full width of the page</p>
 	</section>
 	<nav>
-		<h3>A nice navigation bar</h3>
-		<a href="#one">Link 1</a>
-		<a href="#two">Link 2</a>
-		<a href="#three">Link 3</a>
+		<!--- <h3>A nice navigation bar</h3> -->
+		<a href="#one">Antenna</a>
+		<a href="#two">CCTV</a>
+		<a href="#three">Manhole</a>
+		<a href="#four">Distribution Board</a>
 	</nav>
 
-	<section id="one">
-		<p><strong>Content number one</strong></p>
-		<p>By setting an a tag's href to "#one", it will link to a html element with the id of "one". <a href="https://css-tricks.com/hash-tag-links-padding/">More info about that here</a></p>
+	<section>
+		<h1 style="text-align:center">Internet Infrastructure</h1>
+		<p  style="text-align:center">The internet consists of a tangible physical system so that 
+			we are able to move information from one place to another. 
+			Internet infrastructure is the physical aspects of how information 
+			is communicated and can come in numerous forms. Sometimes, these physical things 
+			aren’t visible to the human eye simply because they’re unnoticeable. 
+			The internet is able to ship binary information through things such as wires, 
+			cables, etc. However, all over Wellington, these can be in the forms of, 
+			but not limited to, antennae, CCTV cameras, manhole covers and distribution boards.</p>
+
+		<p style="text-align:center"><em>“We never, ever in the history of mankind have had access to so much information
+			 so quickly and so easily.”</em>- Vinton Cerf</p>
 	</section>
 
-	<section id="two">
-		<p><strong>Content number 2</strong></p>
-	</section>
 
-	<section id="three">
-		<p><strong>Content number 3</strong></p>
-	</section>
 
-	<header>
+	<header class = "categoryHeader" id = "one">
 		<section>
-			<h1>This header has a solid background and some padding</h1>
-			<p>There is also a section tag inside it to center this content</p>
+			<h1>Antenna</h1>
+			<p>Antennae are typically found on higher platforms and are used to transmit or receive signals. 
+				In this case, the antennae in the images below are used for internet infrastructure as this
+				enables various wireless networking. In Wellington, I saw antennae mainly on top of buildings
+				in the CBD area. </p>
 		</section>
 	</header>
+
+	<section>
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/antenna_1.jpg">
+			</div>
+			<div class="g-30">
+				<img src="img/antenna_2.jpg">
+			</div>
+
+			<div class="g-row">
+				<div class="g-30">
+					<img src="img/antenna_3.jpg">
+				</div>
+				<div class="g-30">
+					<img src="img/antenna_4.jpg">
+				</div>
+			</div>
+	
+	</section>
+
+
+	<header class = "categoryHeader" id = "two">
+		<section>
+			<h1>CCTV Cameras</h1>
+			<p>CCTV (closed-circuit television) cameras are a type of security through the use of video
+				surveillance. These cameras transmit signals to a specific place, usually monitors that
+				are able to be viewed. These were typically found both outside and inside of Wellington 
+				stores, highly likely to monitor possible misdemeanour.</p>
+		</section>
+	</header>
+
+	<section>
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/CCTV_1.jpg">
+			</div>
+			<div class="g-30">
+				<img src="img/CCTV_2.jpg">
+			</div>
+
+			<div class="g-row">
+				<div class="g-30">
+					<img src="img/CCTV_3.jpg">
+				</div>
+				<div class="g-30">
+					<img src="img/CCTV_4.jpg">
+				</div>
+			</div>
+	</section>
+
+
+
+	<header class = "categoryHeader" id = "three">
+		<section>
+			<h1>Manhole Covers</h1>
+			<p>Most people do not know this, but to provide more connections to networks, 
+				a lot of physical forms of internet infrastructure can be located below us.
+				These underground cables are used for the communication of data to and from
+				different places, whether it’s local or international. Manhole covers are passages
+				to these cables so that they are easily accessible if some things were to go wrong. </p>
+		</section>
+	</header>
+
+	<section>
+		<div class="g-row">
+			<div class="g-30">
+				<img src="img/manhole_1.jpg">
+			</div>
+			<div class="g-30">
+				<img src="img/manhole_2.jpg">
+			</div>
 
 	
-
-	<section>
-		<h3>Grids</h3>
-
-		<p>Use grids to divide up or layout content. For example, putting an image on the left, and lots to text on the right</p>
-
-		<p>I've added a 'show' class so you can see where the grids are. Use chrome's web inspector tools to take a closer look</p>
-
-
-		<div class="g-row show"> <!--first wrap all grid cells in a g-row-->
-			<div class="g-50 show">
-				50% width .g-50
-			</div>
-			<div class="g-50 show">
-				50% width .g-50
-			</div>
-
-			<div class="g-30 show">
-				30% width .g-30
-			</div>
-
-			<div class="g-70 show">
-				70% width .g-70
-			</div>
-		</div>
-
-		<p>The other cool things about grids, is that 50% width means 50% of the div's <em>parent</em>. This means you can put cells in cells to get infinitly smaller sizes. The possiblities are endless!</p>
-
-		<div class="g-row show"> <!--first wrap all grid cells in a g-row-->
-			<div class="g-50 show">
-				<div class="g-50 show">
-					<div class="g-50 show">
-						50%
-					</div>
-					<div class="g-50 show">
-						50%
-					</div>
+			<div class="g-row">
+				<div class="g-30">
+					<img src="img/manhole_3.jpg">
 				</div>
-				<div class="g-50 show">
-					50%
+				<div class="g-30">
+					<img src="img/manhole_4.jpg">
 				</div>
 			</div>
-			<div class="g-50 show">
-				50%
-			</div>
-		</div>
-
-		<p>Here's a simple page using all of these elements</p>
 	</section>
 
-	<header>
+
+	<header class = "categoryHeader" id = "four">
 		<section>
-			<h1>Infrastructure of Wellington</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<h1>Distribution Board</h1>
+			<p>Distribution boards divide electrical power into subsidiary circuits as part of
+				 an electricity supply system to provide power for our internet systems. 
+				 These are where the electrical supply is distributed from so that buildings 
+				 and houses can have access to power. Distribution boards were mainly located
+				outside of buildings in Wellington in lots of different forms.</p>
 		</section>
 	</header>
 
 	<section>
 		<div class="g-row">
 			<div class="g-30">
-				<img src="img/cover.jpg">
+				<img src="img/powerbox_1.jpg">
 			</div>
-			<div class="g-70 padded">
-				<h3>Example</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci.</p>
-			</div>
-		</div>
-
-		<div class="g-row">
 			<div class="g-30">
-				<img src="img/cover.jpg">
+				<img src="img/powerbox_2.jpg">
 			</div>
-			<div class="g-70 padded">
-				<h3>Example</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci.</p>
+	
+			<div class="g-row">
+				<div class="g-30">
+					<img src="img/powerbox_3.jpg">
+				</div>
+				<div class="g-30">
+					<img src="img/powerbox_4.jpg">
+				</div>
 			</div>
-		</div>
-
-		<div class="g-row">
-			<div class="g-30">
-				<img src="img/cover.jpg">
-			</div>
-			<div class="g-70 padded">
-				<h3>Example</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci.</p>
-			</div>
-		</div>
-
-		<div class="g-row">
-			<div class="g-30">
-				<img src="img/cover.jpg">
-			</div>
-			<div class="g-70 padded">
-				<h3>Example</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque est, egestas tristique quam nec, efficitur efficitur massa. Aenean in faucibus felis. Mauris ut ligula vestibulum, varius metus vitae, maximus orci.</p>
-			</div>
-		</div>
 	</section>
+
 
 </body>
 
